@@ -30,3 +30,7 @@ def api_card_detial(index):
         return db[index]
     except IndexError:
         abort(404)
+
+@app.route('/add_add')
+def add_card():
+    return render_template("add_card.html")
